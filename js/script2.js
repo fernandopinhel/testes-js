@@ -14,7 +14,7 @@ function eventoClick(){
     let textArea = document.getElementById("exampleFormControlTextarea1");
     textArea.innerHTML = itemSelecionado
 
-    let divs = document.querySelector('[divs]')
+    let divs = document.querySelector('[divs]')    
     divs.classList.remove("hide")
 }
 
@@ -25,5 +25,3 @@ function eventoClickNull(){
     textArea.innerHTML = " "
 }
 // Fim Pegando o texto do option
-
-
