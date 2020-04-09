@@ -14,8 +14,9 @@ function eventoClick(){
     let textArea = document.getElementById("exampleFormControlTextarea1");
     textArea.innerHTML = itemSelecionado
 
-    let divs = document.querySelector('[divs]')    
-    divs.classList.remove("hide")
+    // const divs = document.querySelectorAll('[divs]')
+    // console.log(divs) 
+    //divs.forEach((el) => el.classList.remove("hide"));
 }
 
 function eventoClickNull(){
@@ -24,4 +25,24 @@ function eventoClickNull(){
     let textArea = document.getElementById("exampleFormControlTextarea1");
     textArea.innerHTML = " "
 }
+
+
+// Jquery
+// carregando divs do select
+
+$(function() { //onload aqui
+    $('#exampleFormControlSelect1').on('change', function() {
+      $('[divs]').hide();
+      let idSelecionado = $(this).val(); //construir o id
+      if (idSelecionado != "")
+      $("#" + idSelecionado).show(); //mostrar o elemento
+    });
+  
+    $('#exampleFormControlSelect1').trigger("change"); //aplicar a lógica do change
+  })
+
 // Fim Pegando o texto do option
+
+
+ 
+ 
