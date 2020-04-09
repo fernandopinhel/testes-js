@@ -16,10 +16,12 @@ body{
     margin: 0 0 20px 0;
 }
 
-.hide{
-    display: none;
-}
-
-.d-block{
-    display: block;
+.all{
+    transform: rotate(0deg);
+    transition: transform 0.8s;
+    
+    /* -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out; */
 }
